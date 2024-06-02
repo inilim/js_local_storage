@@ -1,4 +1,4 @@
-import {getAllKeys} from './LocalStorage';
+import {getAllKeysLC} from './LocalStorage';
 
 export class LocalStoragePrefixStaticClassAbstract {
     static prefix = "";
@@ -23,7 +23,7 @@ export class LocalStoragePrefixStaticClassAbstract {
      * @returns {bool}
      */
     static has(name) {
-        return getAllKeys().indexOf(this.getName(name)) !== -1;
+        return getAllKeysLC().indexOf(this.getName(name)) !== -1;
     }
 
     /**

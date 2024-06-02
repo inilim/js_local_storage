@@ -1,9 +1,9 @@
 
 
-export function getAllKeys(){
-    return Object.keys(getAll());
+export function getAllKeysLC(){
+    return Object.keys(getAllLC());
 }
 
-export function getAll(){
+export function getAllLC(){
     return localStorage;
 }
